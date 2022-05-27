@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- File: animal.aiml -->
+<!-- Last modified: September 5, 2014 -->
+<!--  -->
+<!-- This AIML file is part of the Rosie knowledge base. -->
+<!--  -->
+<!-- Rosie is a fork of the ALICE2 brain, and is optimized for use on the Pandorabots platform -->
+<!--  -->
+<!-- Rosie is Copyright &copy; 2014 by Pandorabots, Inc. -->
+<!--  -->
+<!-- The Rosie brain is released under the terms of the GNU Lesser General -->
+<!-- Public License, as published by the Free Software Foundation. -->
+<!--  -->
+<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
+<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
+<!--  -->
+<!-- For more information: -->
+<!-- http://www.pandorabots.com -->
+<!--  http://www.alicebot.org -->
+<!--  -->
+
+<category><pattern>WHAT DOES A <set>animal</set> SAY ^</pattern>
+<template><srai>SOUND <star/></srai></template>
+</category>
+<category><pattern>WHAT DO <set>animals</set> SAY ^</pattern>
+<template><srai>SOUND <srai>SINGULAR <star/></srai></srai></template>
+</category>
+<category><pattern>WHAT SOUND DOES # <set>animal</set> ^</pattern>
+<template><srai>SOUND <star index="2"/></srai></template>
+</category>
+<category><pattern>WHAT SOUND DO # <set>animal</set> ^</pattern>
+<template><srai>SOUND <srai>SINGULAR <star index="2"/></srai></srai></template>
+</category>
+<category><pattern>HOW DOES # <set>animal</set> ^</pattern>
+<template><srai>SOUND <star index="2"/></srai></template>
+</category>
+<category><pattern>HOW MANY LEGS ^ <set>animal</set> #</pattern>
+<template><srai>LEGS <star index="2"/></srai></template>
+</category>
+<category><pattern>HOW MANY LEGS ^ <set>animals</set> #</pattern>
+<template><srai>LEGS <srai>SINGULAR <star index="2"/></srai></srai></template>
+</category>
+<category><pattern>_ 1 <set>animal</set> *</pattern>
+<template><srai><star/> 1 <srai>PLURAL <star index="2"/></srai> <star index="3"/></srai></template>
+</category>
+<category><pattern>_ 1 <set>animal</set></pattern>
+<template><srai><star/> 1 <srai>PLURAL <star index="2"/></srai></srai></template>
+</category>
+<category>
+    <pattern>What does this website do</pattern>
+    <template>It helps you find the best opportunity around your location!</template>
+</category>
+<category>
+    <pattern>how </pattern>
+    <template>You introduce specific data about your budget and location and the app does the rest for you!</template>
+</category>
+<category>
+    <pattern>How much does it take before I receive the feedback </pattern>
+    <template>Almost instantly</template>
+</category>
+<category>
+    <pattern>where do I introduce the data </pattern>
+    <template>You can find it in the options
+
+
+
+
+
+</template>
+</category>
+</aiml>
